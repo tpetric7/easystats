@@ -4,7 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="easystats">
 <title>List of functions • easystats</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -12,12 +13,11 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
-<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="List of functions">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="List of functions">
 <meta property="og:description" content="easystats">
 <meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -25,84 +25,73 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <div class="container template-article">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">easystats</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.2</span>
-      </span>
-    </div>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="../index.html">easystats</a>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="../reference/index.html">Reference</a>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.3</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="../articles/citation.html">Citing 'easystats'</a>
-    </li>
-    <li>
-      <a href="../articles/conventions.html">Coding style conventions</a>
-    </li>
-    <li>
-      <a href="../articles/list_of_functions.html">List of functions</a>
-    </li>
-    <li>
-      <a href="../articles/programming.html">Contributing to R Packages: A Tutorial</a>
-    </li>
-    <li>
-      <a href="../articles/resources.html">Learning resources</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="../news/index.html">Changelog</a>
-</li>
-      </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/easystats/easystats/" class="external-link">
-    <span class="fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-</div>
-<!--/.nav-collapse -->
+<li class="active nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/citation.html">Citing 'easystats'</a>
+    <a class="dropdown-item" href="../articles/conventions.html">Coding style conventions</a>
+    <a class="dropdown-item" href="../articles/list_of_functions.html">List of functions</a>
+    <a class="dropdown-item" href="../articles/programming.html">Contributing to R Packages: A Tutorial</a>
+    <a class="dropdown-item" href="../articles/resources.html">Learning resources</a>
   </div>
-<!--/.container -->
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="../news/index.html">Changelog</a>
+</li>
+      </ul>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="http://twitter.com/easystats4u" aria-label="Twitter">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/easystats/easystats/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
-<!--/.navbar -->
 
-      
+    
+  </div>
+</nav><div class="container template-article">
 
-      </header><script src="list_of_functions_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header toc-ignore">
-      <h1 data-toc-skip>List of functions</h1>
+
+
+<script src="list_of_functions_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+  <main id="main"><div class="page-header">
+      <img src="../logo.png" class="logo" alt=""><h1>List of functions</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/easystats/easystats/blob/master/vignettes/list_of_functions.Rmd" class="external-link"><code>vignettes/list_of_functions.Rmd</code></a></small>
-      <div class="hidden name"><code>list_of_functions.Rmd</code></div>
-
+      <small class="dont-index">Source: <a href="https://github.com/easystats/easystats/blob/HEAD/vignettes/list_of_functions.Rmd" class="external-link"><code>vignettes/list_of_functions.Rmd</code></a></small>
+      <div class="d-none name"><code>list_of_functions.Rmd</code></div>
     </div>
 
     
@@ -252,6 +241,9 @@
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>check_factorstructure</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>check_heterogeneity_bias</code></strong></a> <em>(performance)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>check_heterogeneity</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
@@ -276,7 +268,7 @@
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>check_model</code></strong></a> <em>(performance)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>check_multimodal</code></strong></a> <em>(parameters)</em>
+<a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>check_multimodal</code></strong></a> <em>(performance)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>check_normality</code></strong></a> <em>(performance)</em>
@@ -289,6 +281,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>check_posterior_predictions</code></strong></a> <em>(performance)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>check_predictions</code></strong></a> <em>(performance)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>check_prior</code></strong></a> <em>(bayestestR)</em>
@@ -312,6 +307,9 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>chisq_to_cramers_v</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>chisq_to_pearsons_c</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>chisq_to_phi</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -328,9 +326,6 @@
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>ci_satterthwaite</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>ci_wald</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>ci</code></strong></a> <em>(bayestestR)</em>
@@ -354,6 +349,9 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>clean_parameters</code></strong></a> <em>(insight)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>cles</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>cliffs_delta</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -363,7 +361,16 @@
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>cluster_analysis</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>cluster_centers</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>cluster_discrimination</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>cluster_meta</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>cluster_performance</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>cohens_d</code></strong></a> <em>(effectsize)</em>
@@ -379,6 +386,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>cohens_h</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>cohens_u3</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>cohens_w</code></strong></a> <em>(effectsize)</em>
@@ -397,6 +407,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>colour_text</code></strong></a> <em>(insight)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>common_language</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>compare_models</code></strong></a> <em>(parameters)</em>
@@ -420,9 +433,6 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_d_to_common_language</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_d_to_odds</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_d_to_oddsratio</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -441,13 +451,7 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_logoddsratio_to_r</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_odds_to_d</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_odds_to_probs</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_odds_to_r</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_oddsratio_to_d</code></strong></a> <em>(effectsize)</em>
@@ -468,16 +472,25 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_r_to_d</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_r_to_odds</code></strong></a> <em>(effectsize)</em>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_r_to_oddsratio</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_r_to_oddsratio</code></strong></a> <em>(effectsize)</em>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>convert_rb_to_common_language</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>coord_radar</code></strong></a> <em>(see)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>cor_smooth</code></strong></a> <em>(correlation)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>cor_sort</code></strong></a> <em>(correlation)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>cor_test</code></strong></a> <em>(correlation)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>cor_text</code></strong></a> <em>(correlation)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>cor_to_ci</code></strong></a> <em>(correlation)</em>
@@ -504,10 +517,13 @@
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>cronbachs_alpha</code></strong></a> <em>(performance)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>d_to_common_language</code></strong></a> <em>(effectsize)</em>
+<a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>cwi</code></strong></a> <em>(bayestestR)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>d_to_odds</code></strong></a> <em>(effectsize)</em>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>d_to_cles</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>d_to_common_language</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>d_to_oddsratio</code></strong></a> <em>(effectsize)</em>
@@ -516,55 +532,16 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>d_to_r</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>data_addprefix</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>data_addsuffix</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>data_adjust</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>data_findcols</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>data_match</code></strong></a> <em>(insight)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>data_partition</code></strong></a> <em>(parameters)</em>
+<a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>data_matrix</code></strong></a> <em>(modelbased)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>data_plot</code></strong></a> <em>(see)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>data_relocate</code></strong></a> <em>(insight)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>data_remove</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>data_rename</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>data_reorder</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>data_restoretype</code></strong></a> <em>(insight)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>data_to_long</code></strong></a> <em>(insight)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>data_to_numeric</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>data_to_wide</code></strong></a> <em>(insight)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>degrees_of_freedom</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>degroup</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>demean</code></strong></a> <em>(parameters)</em>
@@ -583,9 +560,6 @@
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>describe_prior</code></strong></a> <em>(bayestestR)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>detrend</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>diagnostic_draws</code></strong></a> <em>(bayestestR)</em>
@@ -816,6 +790,9 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>find_terms</code></strong></a> <em>(insight)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>find_transformation</code></strong></a> <em>(insight)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>find_variables</code></strong></a> <em>(insight)</em>
 </li>
 <li>
@@ -831,10 +808,16 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>format_bf</code></strong></a> <em>(insight)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>format_capitalize</code></strong></a> <em>(insight)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>format_ci</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>format_citation</code></strong></a> <em>(report)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>format_df_adjust</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>format_formula</code></strong></a> <em>(report)</em>
@@ -876,19 +859,22 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>format_table</code></strong></a> <em>(insight)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>format_text</code></strong></a> <em>(report)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>format_value</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>formula_ok</code></strong></a> <em>(insight)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geom_binomdensity</code></strong></a> <em>(see)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geom_count_borderless</code></strong></a> <em>(see)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geom_count2</code></strong></a> <em>(see)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geom_from_list</code></strong></a> <em>(see)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geom_jitter_borderless</code></strong></a> <em>(see)</em>
@@ -921,6 +907,9 @@
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geom_violinhalf</code></strong></a> <em>(see)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>geoms_from_list</code></strong></a> <em>(see)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_auxiliary</code></strong></a> <em>(insight)</em>
 </li>
 <li>
@@ -936,6 +925,9 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_data</code></strong></a> <em>(insight)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_datagrid</code></strong></a> <em>(insight)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_deviance</code></strong></a> <em>(insight)</em>
 </li>
 <li>
@@ -943,6 +935,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>get_effectsize_label</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>get_effectsize_name</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_family</code></strong></a> <em>(insight)</em>
@@ -988,6 +983,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_statistic</code></strong></a> <em>(insight)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_transformation</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>get_varcov</code></strong></a> <em>(insight)</em>
@@ -1047,6 +1045,15 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_cfi</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_cohens_d</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_cohens_g</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_cramers_v</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_d</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -1071,6 +1078,15 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_gfi</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_glass_delta</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_hedges_g</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_icc</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_ifi</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -1081,9 +1097,6 @@
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_nnfi</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_odds</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_oddsratio</code></strong></a> <em>(effectsize)</em>
@@ -1098,6 +1111,12 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_parameters</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_pd</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_phi</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_pnfi</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -1105,6 +1124,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_r2</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_rank_biserial</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_rfi</code></strong></a> <em>(effectsize)</em>
@@ -1120,6 +1142,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_srmr</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret_vif</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>interpret</code></strong></a> <em>(effectsize)</em>
@@ -1149,10 +1174,16 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>is_nullmodel</code></strong></a> <em>(insight)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>is_positive_definite</code></strong></a> <em>(correlation)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>is_regression_model</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>is.cor</code></strong></a> <em>(correlation)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>is.positive_definite</code></strong></a> <em>(correlation)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>is.report</code></strong></a> <em>(report)</em>
@@ -1191,12 +1222,6 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>loglikelihood</code></strong></a> <em>(insight)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>logodds_to_d</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>logodds_to_r</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>logoddsratio_to_d</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -1230,7 +1255,13 @@
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>metro_colors</code></strong></a> <em>(see)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>model_emcontrasts</code></strong></a> <em>(modelbased)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>model_emmeans</code></strong></a> <em>(modelbased)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>model_emtrends</code></strong></a> <em>(modelbased)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>model_info</code></strong></a> <em>(insight)</em>
@@ -1245,10 +1276,28 @@
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>model_performance</code></strong></a> <em>(performance)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>model_to_priors</code></strong></a> <em>(bayestestR)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>mse</code></strong></a> <em>(performance)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>multicollinearity</code></strong></a> <em>(performance)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>n_clusters_dbscan</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>n_clusters_elbow</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>n_clusters_gap</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>n_clusters_hclust</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>n_clusters_silhouette</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>n_clusters</code></strong></a> <em>(parameters)</em>
@@ -1272,13 +1321,7 @@
 <a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>null_model</code></strong></a> <em>(insight)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>odds_to_d</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>odds_to_probs</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>odds_to_r</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>oddsratio_to_d</code></strong></a> <em>(effectsize)</em>
@@ -1305,6 +1348,9 @@
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>p_map</code></strong></a> <em>(bayestestR)</em>
 </li>
 <li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>p_overlap</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>p_pointnull</code></strong></a> <em>(bayestestR)</em>
 </li>
 <li>
@@ -1312,6 +1358,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>p_significance</code></strong></a> <em>(bayestestR)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>p_superiority</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>p_to_pd</code></strong></a> <em>(bayestestR)</em>
@@ -1330,9 +1379,6 @@
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>p_value_satterthwaite</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>p_value_wald</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>p_value</code></strong></a> <em>(parameters)</em>
@@ -1375,6 +1421,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>pd</code></strong></a> <em>(bayestestR)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>pearsons_c</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>performance_accuracy</code></strong></a> <em>(performance)</em>
@@ -1440,9 +1489,6 @@
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>posterior_predictive_check</code></strong></a> <em>(performance)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>pp_check</code></strong></a> <em>(performance)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>principal_components</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
@@ -1467,9 +1513,6 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>r_to_d</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>r_to_odds</code></strong></a> <em>(effectsize)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>r_to_oddsratio</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -1483,6 +1526,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>r2_kullback</code></strong></a> <em>(performance)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>r2_loo_posterior</code></strong></a> <em>(performance)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>r2_loo</code></strong></a> <em>(performance)</em>
@@ -1528,6 +1574,12 @@
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>ranktransform</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>rb_to_cles</code></strong></a> <em>(effectsize)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>rb_to_common_language</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>reduce_data</code></strong></a> <em>(parameters)</em>
@@ -1593,7 +1645,7 @@
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>rescale_weights</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>reshape_ci</code></strong></a> <em>(insight)</em>
+<a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>reshape_ci</code></strong></a> <em>(bayestestR)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>reshape_draws</code></strong></a> <em>(bayestestR)</em>
@@ -1606,12 +1658,6 @@
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>reshape_loadings</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>reshape_longer</code></strong></a> <em>(insight)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>reshape_wider</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>riskratio_to_oddsratio</code></strong></a> <em>(effectsize)</em>
@@ -1830,13 +1876,7 @@
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>sd_pooled</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>se_betwithin</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>se_kenward</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>se_ml1</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>se_satterthwaite</code></strong></a> <em>(parameters)</em>
@@ -1881,9 +1921,6 @@
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>simulate_ttest</code></strong></a> <em>(bayestestR)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>skewness</code></strong></a> <em>(parameters)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>smoothing</code></strong></a> <em>(modelbased)</em>
 </li>
 <li>
@@ -1897,6 +1934,9 @@
 </li>
 <li>
 <a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>standard_error</code></strong></a> <em>(parameters)</em>
+</li>
+<li>
+<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>standardize_column_order</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>standardize_info</code></strong></a> <em>(effectsize)</em>
@@ -1959,22 +1999,7 @@
 <a href="https://easystats.github.io/performance/reference/index.html" class="external-link"><strong><code>test_wald</code></strong></a> <em>(performance)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>text_concatenate</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>text_fullstop</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>text_lastchar</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>text_paste</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>text_remove</code></strong></a> <em>(report)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/report/reference/index.html" class="external-link"><strong><code>text_wrap</code></strong></a> <em>(report)</em>
+<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>text_remove_backticks</code></strong></a> <em>(insight)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>theme_abyss</code></strong></a> <em>(see)</em>
@@ -1995,9 +2020,6 @@
 <a href="https://easystats.github.io/see/reference/index.html" class="external-link"><strong><code>theme_radar</code></strong></a> <em>(see)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/insight/reference/index.html" class="external-link"><strong><code>to_numeric</code></strong></a> <em>(insight)</em>
-</li>
-<li>
 <a href="https://easystats.github.io/effectsize/reference/index.html" class="external-link"><strong><code>unstandardize</code></strong></a> <em>(effectsize)</em>
 </li>
 <li>
@@ -2010,13 +2032,10 @@
 <a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>visualisation_matrix</code></strong></a> <em>(modelbased)</em>
 </li>
 <li>
-<a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>visualisation_recipe</code></strong></a> <em>(modelbased)</em>
+<a href="https://easystats.github.io/parameters/reference/index.html" class="external-link"><strong><code>visualisation_recipe</code></strong></a> <em>(parameters)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/bayestestR/reference/index.html" class="external-link"><strong><code>weighted_posteriors</code></strong></a> <em>(bayestestR)</em>
-</li>
-<li>
-<a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>winsorize</code></strong></a> <em>(correlation)</em>
 </li>
 <li>
 <a href="https://easystats.github.io/correlation/reference/index.html" class="external-link"><strong><code>z_fisher</code></strong></a> <em>(correlation)</em>
@@ -2030,32 +2049,25 @@
 <li>
 <a href="https://easystats.github.io/modelbased/reference/index.html" class="external-link"><strong><code>zero_crossings</code></strong></a> <em>(modelbased)</em>
 </li>
-</ul>
-</div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-
-      </div>
-
+</ul></main>
 </div>
 
 
 
-      <footer><div class="copyright">
+    <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by <a href="https://github.com/strengejacke" class="external-link external-link">Daniel Lüdecke</a>, <a href="https://dominiquemakowski.github.io/" class="external-link external-link">Dominique Makowski</a>, <a href="https://github.com/mattansb" class="external-link external-link">Mattan S. Ben-Shachar</a>, <a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link external-link">Indrajeet Patil</a>, <a href="https://wiernik.org/" class="external-link external-link">Brenton M. Wiernik</a>.</p>
+<p>Developed by <a href="https://github.com/strengejacke" class="external-link">Daniel Lüdecke</a>, <a href="https://dominiquemakowski.github.io/" class="external-link">Dominique Makowski</a>, <a href="https://github.com/mattansb" class="external-link">Mattan S. Ben-Shachar</a>, <a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet Patil</a>, <a href="https://wiernik.org/" class="external-link">Brenton M. Wiernik</a>.</p>
 </div>
 
-<div class="pkgdown">
+<div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link external-link">pkgdown</a> 1.6.1.9001.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
 </div>
 
-      </footer>
+    </footer>
 </div>
 
   
-
 
   
 

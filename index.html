@@ -4,7 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="The easystats is a meta-package that contains a set of
+    packages, all of which aim to provide a unifying and consistent
+    framework to tame, discipline and harness the scary R statistics and
+    their pesky models. This package is designed to make it easy to
+    install and load multiple easystats packages in a single step.">
 <title>Jump in the Easyverse • easystats</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -12,12 +17,11 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Jump in the Easyverse">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Jump in the Easyverse">
 <meta property="og:description" content="The easystats is a meta-package that contains a set of
     packages, all of which aim to provide a unifying and consistent
     framework to tame, discipline and harness the scary R statistics and
@@ -29,93 +33,83 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">easystats</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.2</span>
-      </span>
-    </div>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="index.html">easystats</a>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="reference/index.html">Reference</a>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.3</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="articles/citation.html">Citing 'easystats'</a>
-    </li>
-    <li>
-      <a href="articles/conventions.html">Coding style conventions</a>
-    </li>
-    <li>
-      <a href="articles/list_of_functions.html">List of functions</a>
-    </li>
-    <li>
-      <a href="articles/programming.html">Contributing to R Packages: A Tutorial</a>
-    </li>
-    <li>
-      <a href="articles/resources.html">Learning resources</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="news/index.html">Changelog</a>
-</li>
-      </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/easystats/easystats/">
-    <span class="fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-</div>
-<!--/.nav-collapse -->
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="articles/citation.html">Citing 'easystats'</a>
+    <a class="dropdown-item" href="articles/conventions.html">Coding style conventions</a>
+    <a class="dropdown-item" href="articles/list_of_functions.html">List of functions</a>
+    <a class="dropdown-item" href="articles/programming.html">Contributing to R Packages: A Tutorial</a>
+    <a class="dropdown-item" href="articles/resources.html">Learning resources</a>
   </div>
-<!--/.container -->
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
+</li>
+      </ul>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="http://twitter.com/easystats4u" aria-label="Twitter">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/easystats/easystats/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
-<!--/.navbar -->
 
-      
-
-      </header><div class="row">
-  <div class="contents col-md-9">
-
-<div id="easystats-jump-in-the-easyverse" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#easystats-jump-in-the-easyverse" class="anchor" aria-hidden="true"></a><em>easystats</em>: Jump in the Easyverse</h1></div>
+    
+  </div>
+</nav><div class="container template-home">
+<div class="row">
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header">
+<img src="logo.png" class="logo" alt=""><h1 id="easystats-jump-in-the-easyverse">
+<em>easystats</em>: Jump in the Easyverse<a class="anchor" aria-label="anchor" href="#easystats-jump-in-the-easyverse"></a>
+</h1>
 </div>
-<div id="what-is-easystats" class="section level1">
-<h1 class="hasAnchor">
-<a href="#what-is-easystats" class="anchor" aria-hidden="true"></a>What is <em>easystats</em>?</h1>
+</div>
+<div class="section level1">
+<h1 id="what-is-easystats">What is <em>easystats</em>?<a class="anchor" aria-label="anchor" href="#what-is-easystats"></a>
+</h1>
 <p><strong>easystats</strong> is a collection of R packages, which aims to provide a unifying and consistent framework to tame, discipline, and harness the scary R statistics and their pesky models.</p>
 <p>However, there is not (yet) an <em>unique</em> “easystats” way of doing data analysis. Instead, start with one package and, when you’ll face a new challenge, do check if there is an <em>easystats</em> answer for it in other packages. You will slowly uncover how using them together facilitates your life. And, who knows, you might even end up using them all. <strong><em>Gotta catch ’em all!</em></strong> <!--
 'tis a pokémon reference for y'all grandpas --></p>
 <p><img src="reference/figures/logo_wall.png" width="100%"></p>
 </div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor" aria-hidden="true"></a>Installation</h1>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
+<p><a href="https://easystats.r-universe.dev" class="external-link"><img src="https://easystats.r-universe.dev/badges/:registry" alt=":registry status badge"></a> <a href="https://easystats.r-universe.dev" class="external-link"><img src="https://easystats.r-universe.dev/badges/:total" alt=":total status badge"></a></p>
 <p>The whole <code>easystats</code> suite can be installed <em>at once</em> with the following:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"easystats"</span>, repos <span class="op">=</span> <span class="st">"https://easystats.r-universe.dev"</span><span class="op">)</span></code></pre></div>
@@ -123,16 +117,19 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/easystats/easystats" class="external-link">"easystats"</a></span><span class="op">)</span></code></pre></div>
 <p>The package is currently not available on CRAN, but we are working on submitting it there soon.</p>
+<p>Finally, as <em>easystats</em> sometimes depends on some additional packages for specific functions that are not downloaded by default. If you want to benefit from the <strong>full <em>easystats</em> experience</strong> without any hiccups, simply run the following:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">easystats</span><span class="fu">::</span><span class="fu"><a href="reference/install_suggested.html">install_suggested</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="citation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#citation" class="anchor" aria-hidden="true"></a>Citation</h1>
+<div class="section level1">
+<h1 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
+</h1>
 <p>Do you wish to cite <em>easystats</em>? ❤️</p>
-<p>Have a look at this article on how you can do so! <a href="https://easystats.github.io/easystats/articles/resources.html" class="external-link uri">https://easystats.github.io/easystats/articles/resources.html</a></p>
+<p>Have a look at this article on how you can do so! <a href="https://easystats.github.io/easystats/articles/citation.html" class="external-link uri">https://easystats.github.io/easystats/articles/citation.html</a></p>
 </div>
-<div id="getting-started" class="section level1">
-<h1 class="hasAnchor">
-<a href="#getting-started" class="anchor" aria-hidden="true"></a>Getting started</h1>
+<div class="section level1">
+<h1 id="getting-started">Getting started<a class="anchor" aria-label="anchor" href="#getting-started"></a>
+</h1>
 <p>Each <strong>easystats</strong> package has a different scope and purpose. This means your <strong>best way to start</strong> is to explore and pick the one(s) that you feel might be useful to you. However, as they are built with a “bigger picture” in mind, you will realize that using more of them creates a smooth workflow, as these packages are meant to work together. Ideally, these packages work in unison to cover all aspects of statistical analysis and data visualization.</p>
 <ul>
 <li>
@@ -157,9 +154,9 @@
 <a href="https://github.com/easystats/datawizard" class="external-link"><strong>datawizard</strong></a>: 🧙 Magic potions to clean and transform your data</li>
 </ul>
 </div>
-<div id="frequently-asked-questions" class="section level1">
-<h1 class="hasAnchor">
-<a href="#frequently-asked-questions" class="anchor" aria-hidden="true"></a>Frequently Asked Questions</h1>
+<div class="section level1">
+<h1 id="frequently-asked-questions">Frequently Asked Questions<a class="anchor" aria-label="anchor" href="#frequently-asked-questions"></a>
+</h1>
 <p><strong>How is <em>easystats</em> different from the <em>tidyverse</em>?</strong></p>
 <p>You’ve probably already heard about the <a href="https://www.tidyverse.org/" class="external-link"><strong>tidyverse</strong></a>, another very popular collection of packages (<em>ggplot</em>, <em>dplyr</em>, <em>tidyr</em>, …) that also makes using R easier. So, should you pick the <em>tidyverse</em> or <em>easystats</em>? <strong>Pick both!</strong></p>
 <p>Indeed, these two ecosystems have been designed with very different goals in mind. The <em>tidyverse</em> packages are primarily made to create a new R experience, where data manipulation and exploration is intuitive and consistent. On the other hand, <strong>easystats</strong> focuses more on the final stretch of the analysis: understanding and interpreting your results and reporting them in a manuscript or a report, while following best practices. You can definitely use the <em>easystats</em> functions in a <em>tidyverse</em> workflow!</p>
@@ -171,58 +168,51 @@
 <p><strong>So why not in yours</strong>?</p>
 <p>Moreover, the <em>easystats</em> packages are very lightweight, with a minimal set of dependencies, which again makes it great if you want to rely on them.</p>
 </div>
-<div id="documentation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#documentation" class="anchor" aria-hidden="true"></a>Documentation</h1>
-<div id="websites" class="section level2">
-<h2 class="hasAnchor">
-<a href="#websites" class="anchor" aria-hidden="true"></a>Websites</h2>
+<div class="section level1">
+<h1 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h1>
+<div class="section level2">
+<h2 id="websites">Websites<a class="anchor" aria-label="anchor" href="#websites"></a>
+</h2>
 <p>Each <code>easystats</code> package has a dedicated website.</p>
 <p>For example, website for <code>parameters</code> is <a href="https://easystats.github.io/parameters/" class="external-link uri">https://easystats.github.io/parameters/</a>.</p>
 </div>
-<div id="blog" class="section level2">
-<h2 class="hasAnchor">
-<a href="#blog" class="anchor" aria-hidden="true"></a>Blog</h2>
+<div class="section level2">
+<h2 id="blog">Blog<a class="anchor" aria-label="anchor" href="#blog"></a>
+</h2>
 <p>In addition to the websites containing documentation for these packages, you can also read posts from <code>easystats</code> blog: <a href="https://easystats.github.io/blog/posts/" class="external-link uri">https://easystats.github.io/blog/posts/</a>.</p>
 </div>
-<div id="other-learning-resources" class="section level2">
-<h2 class="hasAnchor">
-<a href="#other-learning-resources" class="anchor" aria-hidden="true"></a>Other learning resources</h2>
+<div class="section level2">
+<h2 id="other-learning-resources">Other learning resources<a class="anchor" aria-label="anchor" href="#other-learning-resources"></a>
+</h2>
 <p>In addition to these websites and blog posts, you can also check out the following presentations and talks to learn more about this ecosystem:</p>
 <p><a href="https://easystats.github.io/easystats/articles/resources.html" class="external-link uri">https://easystats.github.io/easystats/articles/resources.html</a></p>
 </div>
 </div>
-<div id="dependencies" class="section level1">
-<h1 class="hasAnchor">
-<a href="#dependencies" class="anchor" aria-hidden="true"></a>Dependencies</h1>
+<div class="section level1">
+<h1 id="dependencies">Dependencies<a class="anchor" aria-label="anchor" href="#dependencies"></a>
+</h1>
 <p>Most <em>easystats</em> packages are very lightweight, <em>i.e.</em>, they don’t rely nor import any other packages! This means that you can safely use them as dependencies in your own packages, without the risk of a butterfly effect, where a small change in a distant downstream dependency with unexpected upstream consequences.</p>
-<p>For example, the <code>parameters</code> package only relies on two other packages.</p>
-<p><img src="reference/figures/depnetwork_parameters-1.png"><!-- --></p>
-<!-- TODO: uncomment once on CRAN -->
-<!-- ```{r depnetwork_easystats} -->
-<!-- library(deepdep) -->
-<!-- plot_dependencies("easystats", depth = 3) -->
-<!-- ``` -->
-<p><strong>There is one exception</strong>!</p>
-<p>The <a href="http://easystats.github.io/see" class="external-link"><strong>see</strong></a> package is one of our high-level packages that is responsible for plotting and creating figures, relying thus on other packages such as <em>ggplot2</em>, which has a substantial number of dependencies.</p>
-<p><img src="reference/figures/depnetwork_see-1.png"><!-- --></p>
+<p><img src="reference/figures/depnetwork-1.png"><!-- --></p>
+<p>As we can see, the only exception is the <a href="http://easystats.github.io/see" class="external-link"><strong>see</strong></a> package, one of our high-level packages that is responsible for plotting and creating figures, relying thus on other packages such as <em>ggplot2</em>, which has a substantial number of dependencies.</p>
 </div>
-<div id="downloads" class="section level1">
-<h1 class="hasAnchor">
-<a href="#downloads" class="anchor" aria-hidden="true"></a>Downloads</h1>
-<table style="width:100%;" class="table">
+<div class="section level1">
+<h1 id="downloads">Downloads<a class="anchor" aria-label="anchor" href="#downloads"></a>
+</h1>
+<table class="table">
 <colgroup>
 <col width="8%">
 <col width="8%">
+<col width="8%">
+<col width="8%">
 <col width="9%">
+<col width="8%">
+<col width="8%">
 <col width="9%">
-<col width="10%">
-<col width="9%">
-<col width="10%">
 <col width="6%">
-<col width="9%">
-<col width="9%">
+<col width="8%">
 <col width="5%">
+<col width="8%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">Total</th>
@@ -231,45 +221,47 @@
 <th align="left">parameters</th>
 <th align="left">performance</th>
 <th align="left">effectsize</th>
+<th align="left">datawizard</th>
 <th align="left">correlation</th>
 <th align="left">see</th>
 <th align="left">modelbased</th>
-<th align="left">datawizard</th>
 <th align="left">report</th>
+<th align="left">easystats</th>
 </tr></thead>
 <tbody><tr class="odd">
-<td align="left">4,628,282</td>
-<td align="left">1,527,503</td>
-<td align="left">775,196</td>
-<td align="left">717,709</td>
-<td align="left">689,323</td>
-<td align="left">574,135</td>
-<td align="left">126,882</td>
-<td align="left">116,073</td>
-<td align="left">47,791</td>
-<td align="left">45,412</td>
-<td align="left">8,258</td>
+<td align="left">6,689,050</td>
+<td align="left">2,096,632</td>
+<td align="left">1,048,874</td>
+<td align="left">993,208</td>
+<td align="left">940,978</td>
+<td align="left">791,574</td>
+<td align="left">362,953</td>
+<td align="left">192,915</td>
+<td align="left">172,357</td>
+<td align="left">67,813</td>
+<td align="left">21,746</td>
+<td align="left">0</td>
 </tr></tbody>
 </table>
-<div id="trend" class="section level3">
-<h3 class="hasAnchor">
-<a href="#trend" class="anchor" aria-hidden="true"></a>Trend</h3>
-<p><img src="reference/figures/unnamed-chunk-7-1.png" style="display: block; margin: auto;"></p>
-</div>
-<div id="cumulative-downloads" class="section level3">
-<h3 class="hasAnchor">
-<a href="#cumulative-downloads" class="anchor" aria-hidden="true"></a>Cumulative downloads</h3>
+<div class="section level3">
+<h3 id="trend">Trend<a class="anchor" aria-label="anchor" href="#trend"></a>
+</h3>
 <p><img src="reference/figures/unnamed-chunk-8-1.png" style="display: block; margin: auto;"></p>
 </div>
-<div id="average-monthly-downloads" class="section level3">
-<h3 class="hasAnchor">
-<a href="#average-monthly-downloads" class="anchor" aria-hidden="true"></a>Average monthly downloads</h3>
+<div class="section level3">
+<h3 id="cumulative-downloads">Cumulative downloads<a class="anchor" aria-label="anchor" href="#cumulative-downloads"></a>
+</h3>
 <p><img src="reference/figures/unnamed-chunk-9-1.png" style="display: block; margin: auto;"></p>
 </div>
+<div class="section level3">
+<h3 id="average-monthly-downloads">Average monthly downloads<a class="anchor" aria-label="anchor" href="#average-monthly-downloads"></a>
+</h3>
+<p><img src="reference/figures/unnamed-chunk-10-1.png" style="display: block; margin: auto;"></p>
 </div>
-<div id="versioning" class="section level1">
-<h1 class="hasAnchor">
-<a href="#versioning" class="anchor" aria-hidden="true"></a>Versioning</h1>
+</div>
+<div class="section level1">
+<h1 id="versioning">Versioning<a class="anchor" aria-label="anchor" href="#versioning"></a>
+</h1>
 <p>Package version numbers indicate following: <code>MAJOR.MINOR.PATCH.DEVELOPMENT</code>. Here are key steps to keep in mind:</p>
 <ul>
 <li><p>As long as packages are in a more or less rapidly developing and changing state, the <strong>major</strong> version number is typically <code>0</code>.</p></li>
@@ -279,9 +271,9 @@
 <li><p>Current development versions of our packages (i.e. master/main branch from GitHub) additionally have a <strong>development</strong> version number.</p></li>
 </ul>
 </div>
-<div id="contributing" class="section level1">
-<h1 class="hasAnchor">
-<a href="#contributing" class="anchor" aria-hidden="true"></a>Contributing</h1>
+<div class="section level1">
+<h1 id="contributing">Contributing<a class="anchor" aria-label="anchor" href="#contributing"></a>
+</h1>
 <p>We are happy to receive bug reports, suggestions, questions, and (most of all) contributions to fix problems and add features. Pull Requests for contributions are encouraged.</p>
 <p>Here are some simple ways in which you can contribute (in the increasing order of commitment):</p>
 <ul>
@@ -291,29 +283,24 @@
 <li>Add new functionality</li>
 </ul>
 </div>
-<div id="code-of-conduct" class="section level1">
-<h1 class="hasAnchor">
-<a href="#code-of-conduct" class="anchor" aria-hidden="true"></a>Code of Conduct</h1>
+<div class="section level1">
+<h1 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
+</h1>
 <p>Please note that the ‘easystats’ project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="links">
+  </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/easystats/easystats/">https://​github.com/​easystats/​easystats/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/easystats/easystats/issues">https://​github.com/​easystats/​easystats/​issues</a>
-</li>
+<li><a href="https://github.com/easystats/easystats/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/easystats/easystats/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
 <div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></li>
 </ul>
 </div>
 
@@ -327,7 +314,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">Citing easystats</a></li>
+<li><a href="authors.html#citation">Citing easystats</a></li>
 </ul>
 </div>
 
@@ -335,40 +322,39 @@
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://github.com/strengejacke">Daniel Lüdecke</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-8895-3206" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<a href="https://github.com/strengejacke" class="external-link">Daniel Lüdecke</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-8895-3206" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
-<a href="https://dominiquemakowski.github.io/">Dominique Makowski</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-5375-9967" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<a href="https://dominiquemakowski.github.io/" class="external-link">Dominique Makowski</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-5375-9967" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
-<a href="https://github.com/mattansb">Mattan S. Ben-Shachar</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-4287-4801" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<a href="https://github.com/mattansb" class="external-link">Mattan S. Ben-Shachar</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-4287-4801" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
-<a href="https://sites.google.com/site/indrajeetspatilmorality/">Indrajeet Patil</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-1995-6531" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet Patil</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-1995-6531" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
-<a href="https://wiernik.org/">Brenton M. Wiernik</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0001-9560-6336" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li><a href="authors.html">More on authors...</a></li>
+<a href="https://wiernik.org/" class="external-link">Brenton M. Wiernik</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0001-9560-6336" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 
 
 
-  </div>
+  </aside>
 </div>
 
 
-      <footer><div class="copyright">
+    <footer><div class="pkgdown-footer-left">
   <p></p>
 <p>Developed by <a href="https://github.com/strengejacke" class="external-link">Daniel Lüdecke</a>, <a href="https://dominiquemakowski.github.io/" class="external-link">Dominique Makowski</a>, <a href="https://github.com/mattansb" class="external-link">Mattan S. Ben-Shachar</a>, <a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet Patil</a>, <a href="https://wiernik.org/" class="external-link">Brenton M. Wiernik</a>.</p>
 </div>
 
-<div class="pkgdown">
+<div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9001.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
 </div>
 
-      </footer>
+    </footer>
 </div>
 
   
-
 
   
 
