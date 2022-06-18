@@ -20,7 +20,7 @@ downloaded at once using this function. This will allow you to fully utilize
     
     <a class="navbar-brand me-2" href="../index.html">easystats</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,6 @@ downloaded at once using this function. This will allow you to fully utilize
     <a class="dropdown-item" href="../articles/citation.html">Citing 'easystats'</a>
     <a class="dropdown-item" href="../articles/conventions.html">Coding style conventions</a>
     <a class="dropdown-item" href="../articles/list_of_functions.html">List of functions</a>
-    <a class="dropdown-item" href="../articles/programming.html">Contributing to R Packages: A Tutorial</a>
     <a class="dropdown-item" href="../articles/resources.html">Learning resources</a>
   </div>
 </li>
@@ -92,13 +91,17 @@ downloaded at once using this function. This will allow you to fully utilize
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>package</dt>
-<dd><p>If <code>NULL</code>, all suggested packages for all 'easystats'
-packages will be installed. If specific packages are specified, only
-suggested packages for those packages will be installed.</p></dd>
+<dd><p>If <code>NULL</code> or <code>"easystats"</code> (the default), all suggested
+packages for all 'easystats' packages will be installed. If specific
+packages are specified, only suggested packages for those packages will be
+installed.</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>Useful only for its side-effect of installing the needed packages.</p>
+    
+
+<p>Useful only for its side-effect of installing the needed packages.</p>
     </div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
@@ -115,61 +118,11 @@ package.</p>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in"><span class="fu">install_suggested</span><span class="op">(</span><span class="st">"easystats"</span><span class="op">)</span></span>
-<span class="r-in"><span class="op">}</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># listing all reverse dependencies of easystats packages</span></span>
-<span class="r-in"><span class="co"># \donttest{</span></span>
 <span class="r-in"><span class="fu">show_reverse_dependencies</span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">bayestestR</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> brmsmargins, correlation, effectsize, eiCompare, fbst, modelbased, multifear,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   neatStats, parameters, performance, psycho, report, see, sjPlot, sjstats, SSVS</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">correlation</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">-----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ggstatsplot, statsExpressions</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">datawizard</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> bayestestR, correlation, effectsize, modelbased, parameters, performance,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   report, see, sjPlot, statsExpressions</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">effectsize</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> bruceR, modelbased, multifear, psycho, report, see, sjPlot, sjstats,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   statsExpressions</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">insight</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">-------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> bayestestR, correlation, datawizard, effects, effectsize, ggeffects,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   ggstatsplot, insurancerating, marginaleffects, modelbased, modelsummary,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   parameters, performance, psycho, psycModel, report, see, sjlabelled, sjmisc,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   sjPlot, sjstats, statsExpressions</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">modelbased</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> bayestestR, datawizard, see</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">parameters</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> broomExtra, correlation, cvms, dotwhisker, effectsize, ggstatsplot, glmglrt,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   MCM, modelbased, modelsummary, psycho, psycModel, regport, report, see, sjPlot,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   sjstats, statsExpressions</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">performance</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">-----------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> broomExtra, bruceR, drhur, effectsize, ggstatsplot, modelbased, modelsummary,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   psycModel, report, sjPlot, sjstats, statsExpressions</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">report</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">------</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> modelbased, pubh</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">see</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">---</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> bruceR, jsmodule</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span class="op">}</span></span>
+<span class="r-in"></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
@@ -181,7 +134,7 @@ package.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.4.</p>
 </div>
 
     </footer></div>
