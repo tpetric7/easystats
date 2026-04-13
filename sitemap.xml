@@ -10,13 +10,17 @@
 <url><loc>https://easystats.github.io/easystats/articles/conventions.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/articles/index.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/articles/list_of_functions.html</loc></url>
+<url><loc>https://easystats.github.io/easystats/articles/overview_of_vignettes.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/articles/resources.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/articles/version_policy.html</loc></url>
+<url><loc>https://easystats.github.io/easystats/articles/workflow_easystats.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/articles/workflow_performance.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/authors.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/index.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/news/index.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/reference/easystats-package.html</loc></url>
+<url><loc>https://easystats.github.io/easystats/reference/easystats_citations.html</loc></url>
+<url><loc>https://easystats.github.io/easystats/reference/easystats_downloads.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/reference/easystats_packages.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/reference/easystats_update.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/reference/easystats_zen.html</loc></url>
@@ -24,5 +28,6 @@
 <url><loc>https://easystats.github.io/easystats/reference/install_latest.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/reference/install_suggested.html</loc></url>
 <url><loc>https://easystats.github.io/easystats/reference/model_dashboard.html</loc></url>
+<url><loc>https://easystats.github.io/easystats/reference/reexports.html</loc></url>
 </urlset>
 
